@@ -1,0 +1,193 @@
+@import url("reset.css");
+
+/* basic */
+html{
+    font-size: 10px;
+}
+body{
+    max-width: 1920px;
+    height: 4600px;
+    background-color: #EEEEED;
+}
+
+h1{
+    font-size: 6.2rem;
+    color: #050505;
+}
+
+h2{
+    font-size: 4.8rem;
+    color: #050505;
+}
+
+h3{
+    font-size: 2.4rem;
+    color: #050505;
+}
+
+h4{
+    font-size: 1.6rem;
+    color: #050505;
+}
+p{
+    font-size: 2.4rem;
+    color: #050505;
+}
+
+
+
+/* header */
+header{
+    display: fixed;
+    width: 100%;
+    font-size: 20px;
+}
+/* 導覽列 */
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 105px;
+    background-color: #050505;
+    /* border: 1px solid white; */
+}
+
+
+.logo{
+    /* border: 1px solid red; */
+    margin-left: 100px;
+}
+
+
+.menu-list{
+    display: flex;
+    margin-right: 100px;
+}
+
+.menu-list > li{    
+    margin-right: 20px;
+    position: relative;
+    /* border: 1px solid green; */
+    margin-right: 44px;
+}
+
+.menu-list > li  a{
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.menu-list > li:last-child{
+    margin-right: 0;
+}
+
+/* 子選單預設隱藏 */
+.menu-list > li > ol{
+    display: none;
+    position: absolute;
+    border: 1px solid red;
+    background-color: #050505;
+}
+
+
+/*　滿版圖 */
+.main-banner {
+}
+  
+.main-banner img{
+    max-width: 100%;
+    /* height: 100vh; */
+    display:block;
+}
+
+
+/* 最新演出資訊 */
+.wrapper{
+    /* width: 1640px; */
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+
+/* 上方資訊 */
+.top-event{
+    padding-top: 150px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.top-image img{
+    margin-bottom: 215px;
+    margin-left: 165px;
+    display:block;
+    /* border: 1px solid green; */
+}
+
+.top-text{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: 220px;
+    height: 550px;
+    padding: 20px;
+    width: 475px;
+}
+
+.top-text h3{
+    color: #999191;
+}
+
+.top-text h2{
+    margin-top: 45px;
+}
+
+.top-text p{
+    margin-top: 90px;
+    width: 405px;
+}
+
+
+.btn-ticket{
+    margin-top: 100px;
+}
+
+/* 下方資訊 */
+.bot-event{
+    padding-top: 150px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.bot-image img{
+    margin-bottom: 215px;
+    margin-left: 165px;
+    display:block;
+    /* border: 1px solid green; */
+}
+
+.bot-text{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: 220px;
+    height: 550px;
+    padding: 20px;
+    width: 475px;
+}
+
+.bot-text h3{
+    color: #999191;
+}
+
+.bot-text h2{
+    margin-top: 45px;
+}
+
+.bot-text p{
+    margin-top: 90px;
+    width: 405px;
+}
+
+
+.btn-ticket{
+    margin-top: 100px;
+}
