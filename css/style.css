@@ -191,3 +191,17 @@ nav{
 .btn-ticket{
     margin-top: 100px;
 }
+
+/* 新聞頁面 */
+
+.news{}
+
+.news-contents{}
+
+.news-contents > ul{}
+
+.news-contents > ul > li{}
+
+.news-contents > ul > li > a{}
+
+.news-contents > ul > li > a > img{}
