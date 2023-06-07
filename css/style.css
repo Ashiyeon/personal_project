@@ -6,7 +6,6 @@ html{
 }
 body{
     max-width: 1920px;
-    height: 4600px;
     background-color: #EEEEED;
 }
 
@@ -38,7 +37,7 @@ p{
 
 /* header */
 header{
-    display: fixed;
+    position: fixed;
     width: 100%;
     font-size: 20px;
 }
@@ -97,14 +96,14 @@ nav{
   
 .main-banner img{
     max-width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     display:block;
 }
 
 
 /* 最新演出資訊 */
 .wrapper{
-    /* width: 1640px; */
+    max-width: 100%;
     border: 1px solid red;
     margin: 0 auto;
 }
@@ -144,6 +143,7 @@ nav{
 .top-text p{
     margin-top: 90px;
     width: 405px;
+    line-height: 25px;
 }
 
 
@@ -194,6 +194,7 @@ nav{
     margin-top: 90px;
     width: 405px;
     margin-bottom: 15px;
+    line-height: 25px;
 }
 
 
@@ -238,7 +239,7 @@ nav{
 }
 
 .news-contents > ul > li{
-    border : 1px solid black;
+    /* border : 1px solid black; */
     margin-right: 50px;
     background-color: #fff;
 }
@@ -328,4 +329,60 @@ nav{
 .footer{
         height: 310px;
         background-color: #999191;
+        display: flex;
+        position: relative;
+        max-width: 100%;
+        /* border: 1px solid red; */
+}
+
+/* footer 左邊 */
+.left-side{
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 110px;
+    margin-bottom: 30px;
+}
+
+.left-side > h4{
+    color: #f2f2f2;
+    line-height: 42px;
+}
+
+.left-side > h4:nth-child(3){
+    padding-top: 40px;
+}
+
+.left-side > a{
+    margin-right: 5px;
+}
+
+/* footer 中間 */
+.logo-side{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-bottom{
+}
+
+/* footer 右邊 */
+.right-side{
+    position: absolute;
+    right: 0;
+    margin-top: 115px;
+    margin-right: 110px;
+    margin-bottom: 30px;
+}
+
+.right-side > ul{
+    display: flex;
+}
+
+.right-side > ul > li{
+    color: #f2f2f2;
+    line-height: 42px;
+    margin-right: 45px;
+    font-size: 1.6rem;
 }
