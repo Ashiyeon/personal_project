@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('/fonts/Lato-Regular.ttf');
+  }
+  
+@font-face {
+    font-family: 'RobotoSlab-Regular';
+    src: url('/fonts/RobotoSlab-Regular.ttf');
+  }
+  
+@font-face {
+    font-family: "RobotoSlab-Bold";
+    src: url('/fonts/RobotoSlab-Bold.ttf');
+} 
+
+@font-face {
+    font-family: 'RobotoSlab-Medium';
+    src: url('/fonts/RobotoSlab-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'klavika-medium';
+    src: url('/fonts/klavika-medium.otf');
+  }

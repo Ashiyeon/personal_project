@@ -1,5 +1,5 @@
 @import url("reset.css");
-
+@import url("fonts.css");
 /* basic */
 html{
     font-size: 10px;
@@ -12,25 +12,37 @@ body{
 h1{
     font-size: 6.2rem;
     color: #050505;
+
+    font-family: "RobotoSlab-Bold";
 }
 
 h2{
     font-size: 4.8rem;
     color: #050505;
+
+
+    font-family: "RobotoSlab-Bold";
 }
 
 h3{
     font-size: 2.4rem;
     color: #050505;
+
+    font-family: "RobotoSlab-Medium";
 }
 
 h4{
     font-size: 1.6rem;
     color: #050505;
+
+    font-family: 'Lato-Regular';
 }
 p{
     font-size: 2.4rem;
     color: #050505;
+    line-height: 3.6rem;
+
+    font-family: "Lato-Regular";
 }
 
 
@@ -39,7 +51,9 @@ p{
 header{
     position: fixed;
     width: 100%;
-    font-size: 20px;
+    font-size: 2rem;
+
+    font-family: 'klavika-medium';
 }
 /* 導覽列 */
 
@@ -85,7 +99,7 @@ nav{
 .menu-list > li > ol{
     display: none;
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #050505;
 }
 
@@ -104,7 +118,7 @@ nav{
 /* 最新演出資訊 */
 .wrapper{
     max-width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
 }
 
@@ -112,7 +126,7 @@ nav{
 /* 上方資訊 */
 .top-event{
     padding-top: 150px;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     display: flex;
 }
 
@@ -127,7 +141,7 @@ nav{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin-left: 220px;
-    height: 550px;
+    height: 605px;
     padding: 20px;
     width: 475px;
 }
@@ -143,18 +157,23 @@ nav{
 .top-text p{
     margin-top: 90px;
     width: 405px;
-    line-height: 25px;
 }
 
 
 .btn-ticket{
     margin-top: 100px;
+    font-family: 'klavika-medium';
+    letter-spacing: 0.8px;
+}
+
+.btn-ticket:hover{
+    background-color: #B1966A;
 }
 
 /* 下方資訊 */
 .bot-event{
     padding-top: 150px;
-    border: 1px solid black;
+    border-top: 1px solid black;
     display: flex;
 }
 
@@ -174,10 +193,10 @@ nav{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin-left: 220px;
-    height: 550px;
+    height: 605px;
     padding: 20px;
     width: 475px;
-
+    
     order: 1;
 }
 
@@ -194,7 +213,8 @@ nav{
     margin-top: 90px;
     width: 405px;
     margin-bottom: 15px;
-    line-height: 25px;
+    line-height: 3.6rem;
+
 }
 
 
@@ -257,11 +277,15 @@ nav{
 .news-contents > ul > li > a > h3{
     padding-top: 10px;
     padding-left: 15px;
+    color: #999191;
 }
 .news-contents > ul > li > a > h3:last-child{
     margin-top: 15px;
     padding-left: 0;
-    text-align: center;
+    padding-left: 15px;
+    color: #050505;
+
+    font-family: "RobotoSlab-Bold";
 }
 
 
@@ -288,51 +312,59 @@ nav{
 }
     
 .fa-angle-left::before{
-        content:"<"
+    content:"<"
 }
 .fa-angle-right::before{
-        content:">"
+    content:">"
 }
 
 
 /* footer */
 
 .black-footer{
-        width: 100%;
-        height: 360px;
-        background-color: #050505;
-        margin-top: 150px;
+    height: 360px;
+    background-color: #050505;
+    margin-top: 150px;
+    width: 100%;
 }
 
 .black-footer > h1{
-        display:block;
-        color: #fff;
-        text-align: center;
-        padding-top: 100px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    
+    font-family: 'klavika-medium';
+    display:block;
 }
 
 .black-footer > a{
-        display: block;
-        width: 287px;
-        height: 55px;
-        font-size: 24px;
-        margin: 50px auto;
-        text-align: center;
-        line-height: 55px;
-        text-decoration: none;
-        color: #fff;
+    width: 287px;
+    height: 55px;
+    font-size: 2.4rem;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none;
+    color: #fff;
+    
+    background: #987D50;
+    border-radius: 10px;
+    
+    font-family: 'klavika-medium';
+    display: block;
+}
 
-        background: #987D50;
-        border-radius: 10px;
+.black-footer > a:hover{
+    background: #B1966A;
 }
 
 .footer{
-        height: 310px;
-        background-color: #999191;
-        display: flex;
-        position: relative;
-        max-width: 100%;
-        /* border: 1px solid red; */
+    background-color: #999191;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    height: 310px;
+    /* border: 1px solid red; */
 }
 
 /* footer 左邊 */
@@ -368,21 +400,31 @@ nav{
 }
 
 /* footer 右邊 */
-.right-side{
+
+.right-side {
+    display: flex;
+    align-items: center; 
     position: absolute;
     right: 0;
     margin-top: 115px;
     margin-right: 110px;
     margin-bottom: 30px;
-}
-
-.right-side > ul{
+  }
+  
+  .right-side ul {
     display: flex;
-}
+    flex-direction: column; 
+    justify-content: space-between; 
 
-.right-side > ul > li{
+    font-family: 'klavika-medium';
+  }
+  
+  .right-side ul li {
+    display: flex;
+    align-items: center; 
+    margin-right: 55px;
     color: #f2f2f2;
     line-height: 42px;
-    margin-right: 45px;
-    font-size: 1.6rem;
-}
+    font-size: 2rem;
+  }
+  
