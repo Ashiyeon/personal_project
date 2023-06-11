@@ -25,6 +25,13 @@ h2{
 }
 
 h3{
+    font-size: 3.6rem;
+    color: #050505;
+
+    font-family: 'Lato-Regular';
+}
+
+h4{
     font-size: 2.4rem;
     color: #050505;
     line-height: 3.6rem;
@@ -32,12 +39,13 @@ h3{
     font-family: "RobotoSlab-Medium";
 }
 
-h4{
+h5{
     font-size: 1.6rem;
     color: #050505;
 
     font-family: 'Lato-Regular';
 }
+
 p{
     font-size: 2.4rem;
     color: #050505;
@@ -70,7 +78,7 @@ nav{
 
 .logo{
     /* border: 1px solid red; */
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .menu-list{
@@ -157,12 +165,12 @@ nav{
     margin-bottom: 30px;
 }
 
-.left-side > h4{
+.left-side > h5{
     color: #f2f2f2;
     line-height: 42px;
 }
 
-.left-side > h4:nth-child(3){
+.left-side > h5:nth-child(3){
     padding-top: 40px;
 }
 
@@ -356,11 +364,7 @@ nav{
 
 }
 
-
-
-
-
-/* 新聞頁面 */
+/* 最新新聞 */
 
 .news{
     margin-top: 100px;
@@ -400,12 +404,12 @@ nav{
 
 .news-contents > ul > li > a > img{}
 
-.news-contents > ul > li > a > h3{
+.news-contents > ul > li > a > h4{
     padding-top: 10px;
     padding-left: 15px;
     color: #999191;
 }
-.news-contents > ul > li > a > h3:last-child{
+.news-contents > ul > li > a > h4:last-child{
     margin-top: 15px;
     padding-left: 0;
     padding-left: 15px;
@@ -416,18 +420,19 @@ nav{
 
 
 /* 輪播按鈕 */
+
 .fa{
     display: block;
+    box-sizing: border-box;
     width: 50px;
     height: 50px;
+    padding-top: 15px;
     background-color: #333;
     color: white;
     border-radius: 50%;
     text-align: center;
-    line-height: 48px;
-    font-size: 1.5em;
-    top: 0;
-    bottom: 0;
+    justify-content: center;
+    font-size: 1.5rem;
     margin: auto;
     cursor: pointer;
 }
@@ -436,15 +441,10 @@ nav{
 .fa:hover{
     background-color: #666;
 }
+
+.fa-angle-left{
+}
     
-.fa-angle-left::before{
-    content:"<"
-}
-.fa-angle-right::before{
-    content:">"
-}
-
-
 
   
 /* 行事曆 Calendar */
@@ -607,7 +607,7 @@ nav{
     justify-content: center;
 }
 
-.calendar-page h3{
+.calendar-page h4{
     background-color: #D9D9D9;
     width: 50px;
     height: 50px;
@@ -618,7 +618,7 @@ nav{
     border-radius: 50%;
 }
 
-.calendar-page h3:hover{
+.calendar-page h4:hover{
     background-color: #afadad ;
 }
 
@@ -647,10 +647,23 @@ nav{
 }
 
 .tickets-top h4{
+    margin-bottom: 20px;
+
+    font-size: 2.8rem;
+    font-family: 'RobotoSlab-Bold';
+}
+
+.tickets-top h5{
     padding-top: 140px; 
 
     font-size: 4.8rem;
     font-family: 'RobotoSlab-Medium';
+}
+
+.tickets-top p{
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 685px;
 }
 
 
@@ -659,7 +672,7 @@ nav{
     justify-content: space-between;
     align-items: start;
 }
-.tickets-content {
+.tickets-content{
     flex-basis: 50%;
     /* border: 1px solid red; */
 }
@@ -673,19 +686,8 @@ nav{
 
 }
 
-.tickets-info h3{
-    margin-bottom: 15px;
-    width: 657px;
-    font-family: "RobotoSlab-Bold";
-}
 
-.tickets-info p{
-    font-size: 2rem;
-    line-height: 3rem;
-    width: 685px;
-}
-
-.tickets-img {
+.tickets-img{
     display: block; 
     margin-top: 105px;
     
@@ -730,3 +732,258 @@ nav{
   .tickets-sell li:first-child{
     font-weight: bold;
   }
+
+
+
+
+  /* 新聞頁面 news*/
+
+.news-wrapper{
+    padding-top: 105px;
+}
+
+.news-top{
+    width: 950px;
+    height: 400px;
+    padding: 50px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+.news-top h3{
+    color: #999191;
+    line-height: 5.4rem;
+}
+
+.news-top h1{
+    margin-bottom: 50px;
+}
+
+.news-top h4{
+    font-family: 'Lato-Regular';
+    width: 800px;
+    margin-bottom: 75px;
+}
+
+.news-top p{
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    width: 220px;
+    text-align: center;
+    height: 3.6rem;
+
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.news-top .fa-regular{
+    padding-right: 10px;
+}
+
+
+/* 中間新聞圖 */
+.news-banner{
+    width: 1200px;
+
+    margin: 0 auto;
+}
+
+.news-banner img{
+    width: 100%;
+}
+
+.photo-by{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.8px;
+    width: 1100px;
+    text-align: left;
+    margin: 0 auto;
+
+
+    font-family: 'Lato-Regular';
+}
+
+
+
+/* 下方新聞欄位 */
+.news-bottom{
+    width: 1200px;
+    margin: 125px auto 0 auto;
+    padding: 50px 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* 新聞第一段 */
+.first-para h4{
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+
+    font-family: 'Lato-Regular'
+}
+
+
+/* 新聞第二段 */
+.second-para{
+    display: flex;
+    margin-top: 80px;
+}
+
+.second-para img{
+    display: block;
+}
+
+.second-para p{
+    width: 400px;
+    margin-left: 50px;
+    font-size: 2rem;
+    line-height: 3rem;
+
+    font-family: 'Lato-Regular'
+}
+
+/* 新聞第三段 */
+.third-para{
+    display: flex;
+    margin-top: 80px;
+}
+
+.third-para img{
+    display: block;
+}
+
+.third-para p{
+    margin-right: 50px;
+    width: 400px;
+    font-size: 2rem;
+    line-height: 3rem;
+
+    font-family: 'Lato-Regular'
+}
+
+.photo-by-2{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.8px;
+
+    text-align: left;
+    margin: 0 auto;
+
+
+    font-family: 'Lato-Regular';
+}
+
+.photo-by-3{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.8px;
+
+    text-align: right;
+    margin: 0 auto;
+    margin-right: 90px;
+
+
+    font-family: 'Lato-Regular';
+}
+
+
+
+/* 關於我們 about us */
+
+.about-us{
+    padding-top: 155px;
+    width: 1520px;
+    margin: 0 auto 150px auto;
+    display: flex;
+    border-bottom: 1px solid #050505;
+    margin-bottom: 230px;
+}
+
+.about-us img{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about-us-text{
+    width: 650px;
+    margin-left: 100px;
+}
+
+.about-us-text h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-us-text h4{
+    font-family: 'Lato-Regular';
+}
+
+
+/* music-director 音樂總監頁面 */
+.music-director{
+    padding-top: 155px;
+    width: 1520px;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 1px solid #050505;
+    padding-left: 100px;
+    margin-bottom: 230px;
+    box-sizing: border-box;
+}
+
+.music-director-img{
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 100px;
+    order: 2;
+}
+
+.music-director-text{
+    width: 480px;
+    margin-right: 100px;
+    
+    order: 1;
+}
+
+.music-director-text h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.music-director-text h4{
+    font-family: 'Lato-Regular';
+}
+
+
+/* musicians 音樂家頁面 */
+.musicians{
+    width: 1520px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.musicians-img{
+
+    margin-bottom: 90px;
+}
+
+.musicians-img img{
+    display: block;
+    width: 100%;
+}
+
+.musicians h4{
+    padding-top: 20px;
+
+    font-family: 'Lato-Regular';
+}
+
+.musicians a h4{
+    padding-top: 40px;
+    text-decoration: #050505;
+
+    font-family: 'Lato-Bold';
+}
