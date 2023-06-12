@@ -1128,7 +1128,7 @@ nav{
 }
 
 .donation{
-    background-image: url("/image/donation-bg.png");
+    background-image: url("../image/donation-bg.png");
     height: 1041px;
     display: flex;
     justify-content: center;
