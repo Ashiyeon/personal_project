@@ -62,6 +62,9 @@ p{
 header{
     position: fixed;
     width: 100%;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 2rem;
 
     font-family: 'klavika-medium';
@@ -118,6 +121,9 @@ nav{
     background-color: #050505;
     margin-top: 150px;
     width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .black-footer > h1{
@@ -155,6 +161,8 @@ nav{
     display: flex;
     position: relative;
     max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     height: 310px;
     /* border: 1px solid red; */
 }
