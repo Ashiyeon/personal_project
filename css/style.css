@@ -80,6 +80,7 @@ nav{
     justify-content: space-between;
     height: 105px;
     background-color: #050505;;
+    
     /* border: 1px solid white; */
 }
 
@@ -91,6 +92,7 @@ nav{
 .menu-list{
     display: flex;
     margin-right: 100px;
+    font-family: 'klavika-medium';
 }
 
 .menu-list > li{    
@@ -182,9 +184,9 @@ nav{
     line-height: 42px;
 }
 
-.left-side > h5:nth-child(3){
+/* .left-side > h5:nth-child(3){
     padding-top: 40px;
-}
+} */
 
 .left-side > a{
     margin-right: 5px;
@@ -262,29 +264,31 @@ nav{
 }
 
 .top-image{
-    width: 80vh;
+    width: 60%;
+    padding-right: 20px;
+    padding-left: 150px;
 }
 
 .top-image img{
     margin-bottom: 215px;
-    margin-left: 165px;
+    margin-left: 0;
     display:block;
     width: 100%;
-    /* width: 40%; */
+
     /* border: 1px solid green; */
 }
 
 .top-text{
-    /* border-top: 1px solid black; */
-    border-bottom: 1px solid black;
-    margin-left: 220px;
+    /* margin-left: 420px; */
     /* height: 605px; */
     padding: 20px;
-    /* width: 60%; */
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 40%;
 }
 
 .h3-div{
-    /* box-sizing: border-box; */
+
     border-top: 1px solid black;
     padding-top: 50px;
 }
@@ -345,25 +349,28 @@ nav{
     display: flex;
 }
 
+.bot-image{
+    width: 60%;
+    padding-right: 150px;
+    padding-left: 150px;
+    order: 2;
+}
+
 .bot-image img{
     margin-bottom: 215px;
-    margin-left: 165px;
-    display:block;
+    margin-right: 0;
+    width: 100%;
+    display: block;
     /* border: 1px solid green; */
     
 }
 
-.bot-image{
-    order: 2;
-}
+
 
 .bot-text{
-    /* border-top: 1px solid black; */
-    /* border-bottom: 1px solid black; */
-    margin-left: 220px;
-    /* height: 605px; */
     padding: 20px;
-    width: 475px;
+    padding-left: 150px;
+    width: 40%;
     
     order: 1;
 }
@@ -465,7 +472,11 @@ nav{
 
 .fa-angle-left{
 }
-    
+
+
+
+
+
 
   
 /* 行事曆 Calendar */
@@ -647,6 +658,54 @@ nav{
 
 
 
+/* 麵包屑 */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: 110px;
+    /* border: 1px solid black; */
+    padding-left: 5px;
+    width: 300px;
+  }
+  
+  .breadcrumb_list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+  }
+  
+  .breadcrumb_list > li {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: gray;
+    font-size: 18px;
+    
+  }
+  
+  .breadcrumb_list > li:before {
+    content: "/";
+    color: #aaa;
+    margin-right: 12px;
+    font-size: 18px;
+  }
+  
+  .breadcrumb_list > li:first-child:before {
+    content: "";
+    margin-right: 0;
+  }
+  
+  .breadcrumb_list > li > a {
+    text-decoration: none;
+    color: darkgray;
+  }
+
+  .breadcrumb_list > li > a:hover{
+    color: #666;
+  }
+
 
 /* 售票頁面 tickets */
 
@@ -656,7 +715,7 @@ nav{
 }
 
 .tickets-top h2{
-    padding-top: 255px;
+    padding-top: 140px;
     margin-left: 140px;
 
     font-family: 'RobotoSlab-Regular';
@@ -1002,7 +1061,7 @@ nav{
 .musicians a h4{
     padding-top: 40px;
     text-decoration: #050505;
-
+    text-decoration-color: #050505 ;
     font-family: 'Lato-Bold';
 }
 
@@ -1512,4 +1571,16 @@ nav{
 
 .contact-form input, .contact-form select{
     font-size: 2.4rem;
+}
+
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-form .btn-login{
+    margin-top: 30px;
+    align-self: flex-end;
 }
