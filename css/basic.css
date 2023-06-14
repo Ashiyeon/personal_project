@@ -46,6 +46,15 @@ h5{
     font-family: 'Lato-Regular';
 }
 
+h6{
+    font-size: 1.4rem;
+    color: #f2f2f2;
+    padding-top: 20px;
+    line-height: 2.1rem;
+
+    font-family: 'Lato-Regular';
+}
+
 p{
     font-size: 2.4rem;
     color: #050505;
@@ -112,6 +121,13 @@ nav{
 
 /* 子選單預設隱藏 */
 .menu-list > li > ol{
+    display: none;
+    position: absolute;
+    /* border: 1px solid red; */
+    background-color: #050505;
+}
+
+.menu-list > li:hover > ol{
     display: none;
     position: absolute;
     /* border: 1px solid red; */

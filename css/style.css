@@ -620,7 +620,9 @@
     border: 1px solid black;
     border-radius: 30px;
 }
-
+.news-top a{
+    text-decoration: none;
+}
 .news-top .fa-regular{
     padding-right: 10px;
 }
@@ -628,7 +630,7 @@
 
 /* 中間新聞圖 */
 .news-banner{
-    width: 1200px;
+    max-width: 1200px;
 
     margin: 0 auto;
 }
@@ -677,6 +679,7 @@
 
 .second-para img{
     display: block;
+    max-width: 100%;
 }
 
 .second-para p{
@@ -696,6 +699,7 @@
 
 .third-para img{
     display: block;
+    max-width: 100%;
 }
 
 .third-para p{
@@ -738,7 +742,7 @@
 
 .about-us{
     padding-top: 155px;
-    width: 1520px;
+    max-width: 1520px;
     margin: 0 auto 150px auto;
     display: flex;
     border-bottom: 1px solid #050505;
@@ -747,6 +751,7 @@
 
 .about-us img{
     display: block;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 
@@ -760,14 +765,12 @@
     margin-bottom: 30px;
 }
 
-.about-us-text h4{
-}
 
 
 /* music-director 音樂總監頁面 */
 .music-director{
     padding-top: 155px;
-    width: 1520px;
+    max-width: 1520px;
     margin: 0 auto;
     display: flex;
     border-bottom: 1px solid #050505;
@@ -781,6 +784,7 @@
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: 100px;
+    max-width: 100%;
     order: 2;
 }
 
@@ -796,13 +800,10 @@
     margin-bottom: 50px;
 }
 
-.music-director-text h4{
-}
-
 
 /* musicians 音樂家頁面 */
 .musicians{
-    width: 1520px;
+    max-width: 1520px;
     margin: 0 auto;
     text-align: center;
 
@@ -815,7 +816,7 @@
 
 .musicians-img img{
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
 .musicians h4{
@@ -932,6 +933,10 @@
 
 .one-off-support h2{
     margin-bottom: 20px;
+}
+
+.support-way ul{
+    list-style-image: url("../image/peanut-list-style.png")
 }
 
 .one-off-support li{
