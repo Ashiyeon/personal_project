@@ -108,6 +108,7 @@ nav{
     position: relative;
     /* border: 1px solid green; */
     margin-right: 44px;
+    margin-bottom: 1px;
 }
 
 .menu-list > li  a{
@@ -119,20 +120,30 @@ nav{
     margin-right: 0;
 }
 
-/* 子選單預設隱藏 */
-.menu-list > li > ol{
-    display: none;
-    position: absolute;
-    /* border: 1px solid red; */
-    background-color: #050505;
+.menu-list > li:hover{
+    border-bottom: 1px solid #f6f6f6;
 }
 
-.menu-list > li:hover > ol{
+   
+/* 子選單預設隱藏 */
+.menu-list > li > ol {
     display: none;
     position: absolute;
-    /* border: 1px solid red; */
+    top: 100%; /* 子選單相對於父選單的位置 */
+    left: 0;
+    width: 100%;
     background-color: #050505;
+    padding: 10px 0; /* 添加內邊距，撐開子選單 */
 }
+
+.menu-list > li > ol > li{
+    padding: 10px 0;
+}
+/* .menu-list > li:hover > ol{
+    display: block;
+    position: absolute;
+    background-color: #050505;
+} */
 
 /* footer */
 .black-footer{
