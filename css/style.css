@@ -326,7 +326,7 @@
     /* border: 1px solid black; */
     width: 70%;
     box-sizing: border-box;
-    padding: 45px;
+    padding: 35px;
     padding-left: 0;
     /* position: relative; */
 }
@@ -832,7 +832,7 @@
 .members{
     box-sizing: border-box;
     padding-top: 105px;
-    width: 1530px;
+    /* width: 1530px; */
     margin: 0 auto;
 }
 
@@ -880,8 +880,12 @@
     padding-left: 10px;
 }
 
-.artist img:hover{
+.artist img{
     transition: all 0.4s;
+    
+}
+
+.artist img:hover{
     transform: scale(0.8);
 }
 
@@ -978,8 +982,9 @@
     width: 670px;
     height: 664px;
     background-color: #D9D9D9;
+    background-color: rgba(217, 217, 217, 0.9);
     margin-bottom: 100px;
-    opacity: 0.9;
+    
     margin-top: 270px;
 }
 
@@ -1183,7 +1188,7 @@
 }
 
 .loginsite label{
-    margin-top: 75px;
+    margin-top: 50px;
     font-size: 24px;
 }
 
@@ -1256,7 +1261,6 @@
     padding-top: 235px;
     padding-bottom: 30px;
     margin-top: 105px;
-    width: 1530px;
     margin: 0 auto;
     border-bottom: 1px solid black;
 }
@@ -1308,12 +1312,13 @@
     margin-top: 0;
 }
 
-.contact-form input:nth-child(5){
+
+#textarea{
     width: 755px;
     height: 120px;
+    margin-top: 50px;
+    font-family: 'Lato-Regular';
 }
-
-
 
 .contact-form select{
     width: 763px;
@@ -1322,7 +1327,7 @@
     margin-top: 50px;
 }
 
-.contact-form input, .contact-form select{
+.contact-form input, .contact-form select, textarea{
     font-size: 2.4rem;
 }
 
