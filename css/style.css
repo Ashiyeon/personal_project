@@ -521,9 +521,10 @@
 
 .tickets-info{
     height: 280px;
+    width: 85%;
     padding: 40px;
-    margin-left: 135px;
-    margin-right: 40px;
+    margin-left: 30px;
+    /* margin-right: 40px; */
     background-color: #D9D9D9;
 }
 
@@ -534,6 +535,9 @@
     
     flex-basis: 50%;
 
+}
+.tickets-img img{
+    width: 100%;
 }
 
 
