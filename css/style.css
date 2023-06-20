@@ -106,21 +106,19 @@
 
 .bot-image{
     width: 60%;
-    padding-right: 150px;
+    padding-right: 20px;
     padding-left: 150px;
     order: 2;
 }
 
 .bot-image img{
-    margin-bottom: 215px;
+    /* margin-bottom: 215px; */
     margin-right: 0;
-    width: 100%;
     display: block;
+    width: 100%;
     /* border: 1px solid green; */
     
 }
-
-
 
 .bot-text{
     padding: 20px;
@@ -527,7 +525,6 @@
     /* margin-right: 40px; */
     background-color: #D9D9D9;
 }
-
 
 .tickets-img{
     display: block; 
