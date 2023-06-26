@@ -1,0 +1,157 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("basic.css");
+
+
+/* 新聞頁面 news*/
+
+  .news-wrapper{
+    padding-top: 105px;
+}
+
+.news-top{
+    width: 950px;
+    padding: 50px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+.news-top h3{
+    color: #999191;
+    line-height: 5.4rem;
+}
+
+.news-top h1{
+    margin-bottom: 50px;
+}
+
+.news-top h4{
+    width: 800px;
+    margin-bottom: 75px;
+}
+
+.news-top p{
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    width: 220px;
+    text-align: center;
+    height: 3.6rem;
+
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.news-top a{
+    text-decoration: none;
+}
+.news-top .fa-regular{
+    padding-right: 10px;
+}
+
+
+/* 中間新聞圖 */
+.news-banner{
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.news-banner img{
+    width: 100%;
+}
+
+.photo-by{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.8px;
+    width: 1100px;
+    text-align: left;
+    margin: 0 auto;
+
+
+    font-family: 'Lato-Regular';
+}
+
+
+
+/* 下方新聞欄位 */
+.news-bottom{
+    width: 1200px;
+    margin: 125px auto 0 auto;
+    padding: 50px 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* 新聞第一段 */
+.first-para h4{
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+
+    font-family: 'Lato-Regular'
+}
+
+
+/* 新聞第二段 */
+.second-para{
+    display: flex;
+    margin-top: 80px;
+}
+
+.second-para img{
+    display: block;
+    max-width: 100%;
+}
+
+.second-para p{
+    width: 400px;
+    margin-left: 50px;
+    font-size: 2rem;
+    line-height: 3rem;
+
+    font-family: 'Lato-Regular'
+}
+
+/* 新聞第三段 */
+.third-para{
+    display: flex;
+    margin-top: 80px;
+}
+
+.third-para img{
+    display: block;
+    max-width: 100%;
+}
+
+.third-para p{
+    margin-right: 50px;
+    width: 400px;
+    font-size: 2rem;
+    line-height: 3rem;
+
+    font-family: 'Lato-Regular'
+}
+
+.photo-by-2{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.8px;
+
+    text-align: left;
+    margin: 0 auto;
+
+
+    font-family: 'Lato-Regular';
+}
+
+.photo-by-3{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.8px;
+
+    text-align: right;
+    margin: 0 auto;
+    margin-right: 90px;
+
+
+    font-family: 'Lato-Regular';
+}

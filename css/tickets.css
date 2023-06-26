@@ -1,0 +1,166 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("basic.css");
+
+
+
+/* 麵包屑 */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: 115px;
+    /* border: 1px solid black; */
+    padding-left: 5px;
+    width: 300px;
+  }
+  
+  .breadcrumb_list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+  }
+  
+  .breadcrumb_list > li {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: gray;
+    font-size: 18px;
+    
+  }
+  
+  .breadcrumb_list > li:before {
+    content: "/";
+    color: #aaa;
+    margin-right: 12px;
+    font-size: 18px;
+  }
+  
+  .breadcrumb_list > li:first-child:before {
+    content: "";
+    margin-right: 0;
+  }
+  
+  .breadcrumb_list > li > a {
+    text-decoration: none;
+    color: darkgray;
+  }
+
+  .breadcrumb_list > li > a:hover{
+    color: #666;
+  }
+
+
+/* 售票頁面 tickets */
+
+
+.tickets-top{
+    
+    margin-bottom: 120px;
+}
+
+.tickets-top h2{
+    padding-top: 140px;
+    margin-left: 140px;
+
+    font-family: 'RobotoSlab-Regular';
+}
+
+.tickets-top h1{
+    margin: 10px 0 85px 140px;
+    font-size: 6.4rem;
+}
+
+.tickets-top h4{
+    margin-bottom: 20px;
+
+    font-size: 2.8rem;
+    font-family: 'RobotoSlab-Bold';
+}
+
+.tickets-top h5{
+    padding-top: 120px; 
+
+    font-size: 4.8rem;
+    font-family: 'RobotoSlab-Medium';
+    padding-left: 40px;
+}
+
+.tickets-top p{
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 685px;
+}
+
+
+.tickets-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.tickets-content{
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+}
+
+.tickets-info{
+    height: 280px;
+    width: 85%;
+    padding: 40px;
+    margin-left: 30px;
+    /* margin-right: 40px; */
+    background-color: #D9D9D9;
+}
+
+
+.tickets-img{
+    display: block; 
+    margin-top: 105px;
+    
+    flex-basis: 50%;
+
+}
+.tickets-img img{
+    width: 100%;
+}
+
+
+
+/* 下方售票頁面 */
+.tickets-bottom {
+    margin-bottom: 15px;
+    
+  }
+  
+.tickets-sell {
+    display: flex;
+    width: 1470px;
+    height: 170px;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .tickets-sell .btn-ticket {
+    margin:0;
+    /* margin-left: 50px; */
+  }
+  
+  .tickets-sell li {
+    font-family: 'Lato-Regular';
+    padding: 10px;
+    flex-shrink: 0;
+    font-size: 2.4rem;
+    color: #050505;
+    line-height: 3.6rem;
+    flex-grow: 1;
+  }
+
+  .tickets-sell li:first-child{
+    font-weight: bold;
+  }
+

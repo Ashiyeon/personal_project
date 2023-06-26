@@ -1,0 +1,93 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("basic.css");
+
+
+/* 聯絡我們 contact */
+.contact{
+    padding-top: 115px;
+    padding-left: 65px;
+    padding-bottom: 30px;
+    margin-top: 105px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.contact-text{
+    width: 480px;
+    padding-left: 20px;
+    
+    /* border: 1px solid red; */
+}
+
+.contact-text p{
+    padding-top: 30px;
+}
+.contact-text p:first-child{
+    padding-top: 0;
+}
+
+.contact-text a{
+    color: #050505;
+    text-decoration-color: #050505;
+}
+
+.contact-container{
+
+    width: 1400px;
+    display: flex;
+    margin: 180px auto 0 auto;
+
+    justify-content: space-between;
+    /* border: 1px solid black; */
+
+}
+
+
+.contact-form{
+    width: 760px;
+    /* border: 1px solid green; */
+}
+
+.contact-form input{
+    width: 755px;
+    height: 60px;
+    right: 0;
+    margin-top: 50px;
+}
+
+.contact-form input:first-child{
+    width: 755px;
+    margin-top: 0;
+}
+
+
+#textarea{
+    width: 755px;
+    height: 120px;
+    margin-top: 50px;
+    resize: none;
+    font-family: 'Lato-Regular';
+}
+
+.contact-form select{
+    width: 763px;
+    height: 66px;
+    right: 0;
+    margin-top: 50px;
+}
+
+.contact-form input, .contact-form select, textarea{
+    font-size: 2.4rem;
+}
+
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-form .btn-ticket{
+    margin-top: 30px;
+}

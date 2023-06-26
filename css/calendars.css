@@ -1,0 +1,171 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("basic.css");
+
+/* 行事曆 Calendar */
+
+.calendar-h1{
+    padding-top: 155px;
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 89.5%;
+}
+
+.btn-search{
+    
+    border: 1px solid #fff;
+    padding: 20px 20px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 220px;
+    height: 55px;
+
+    margin-top: 100px;
+    font-family: 'Lato-Regular';
+    letter-spacing: 0.8px;
+}
+
+
+.btn-search:hover{
+    background-color: #B1966A;
+}
+
+
+.fa-magnifying-glass{
+    color: #050505;
+}
+
+.fa-calendar{
+    color: #050505;
+}
+
+
+/* calendar主畫面 */
+
+
+.calendar{
+    display: flex;
+    /* border: 1px solid red; */
+    max-width: 1500px;
+    margin: 15px auto;
+    background-color: #fff;
+}
+
+.calendar-image{
+}
+
+.calendar-image img{
+    display: block;
+}
+
+.calendar-day{
+    font-size: 4.2rem;
+    font-family: 'RobotoSlab-Regular';
+    color: #666;
+    align-self: center;
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 300px;
+}
+
+.info-wrapper{
+    /* border: 1px solid black; */
+    width: 70%;
+    box-sizing: border-box;
+    padding: 35px;
+    padding-left: 0;
+    /* position: relative; */
+}
+
+.info-wrapper span{
+    display: block;
+    font-size: 3.6rem;
+    font-family: "RobotoSlab-Bold";
+    color: #333;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+}
+
+.info-wrapper h4{
+    font-size: 1.8rem;
+    font-family: 'RobotoSlab-Regular';
+    line-height: 27px;
+    color: #333;
+}
+
+.info-wrapper p{
+    font-size: 1.6rem;
+    font-family: "RobotoSlab-Bold";
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+/* read more & buy tickets */
+.btn-read-more{
+    display: block;
+    text-align: center;
+    line-height: 5.5rem;
+    font-size: 1.8rem;
+    width: 220px;
+    letter-spacing: 0.8px;
+
+    color: #050505;
+    background-color: #f6f6f6;
+    border: 1px solid #050505;
+    border-radius: 30px;
+    text-decoration: none;
+
+    font-family: 'Lato-Regular';
+}
+
+.btn-read-more:hover{
+    background-color: #dddddd;
+
+}
+
+.info-wrapper .btn-ticket{
+    margin-top: 0;
+
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+
+    font-family: 'Lato-Regular';
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+}
+
+.calendar-page{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.calendar-page h4{
+    background-color: #D9D9D9;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 15px;
+
+    border-radius: 50%;
+}
+
+.calendar-page h4:hover{
+    background-color: #afadad ;
+}
+
+

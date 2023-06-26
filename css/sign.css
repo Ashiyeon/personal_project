@@ -1,0 +1,65 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("basic.css");
+
+
+/* .會員登入介面 sign in */
+
+
+.account{
+    padding-top: 115px;
+    padding-left: 65px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.login{
+    background-image: url(../image/sign-bg.png);
+    background-size: cover;
+    padding-bottom: 150px;
+    margin-bottom: -150px;
+    
+}
+
+.loginsite{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    width: 660px;
+    /* border: 1px solid black; */
+    margin : 0 auto;
+    font-family: "RobotoSlab-Bold";
+}
+
+.loginsite label{
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.email-address, .password{
+    font-size: 24px;
+    width: 650px;
+    height: 60px;
+}
+
+.loginsite h5{
+    margin-top: 50px;
+}
+
+.loginsite h5:last-child{
+    margin-top: 15px;
+}
+
+.loginsite h5 > a{
+    color: #050505;
+}
+
+.loginsite > .btn-ticket {
+    align-self: flex-end;
+    margin-top: 50px;
+}
+
+.btn-login:hover{
+    background-color: #B1966A;
+}

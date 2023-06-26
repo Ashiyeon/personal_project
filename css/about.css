@@ -1,0 +1,98 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("basic.css");
+
+
+
+/* 關於我們 about us */
+
+.about-us{
+    padding-top: 155px;
+    max-width: 1520px;
+    margin: 0 auto 150px auto;
+    display: flex;
+    border-bottom: 1px solid #050505;
+    margin-bottom: 230px;
+}
+
+.about-us img{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-us-text{
+    width: 650px;
+    margin-left: 100px;
+}
+
+.about-us-text h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+/* music-director 音樂總監頁面 */
+.music-director{
+    padding-top: 155px;
+    max-width: 1520px;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 1px solid #050505;
+    padding-left: 100px;
+    margin-bottom: 230px;
+    box-sizing: border-box;
+}
+
+.music-director-img{
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 100px;
+    max-width: 100%;
+    order: 2;
+}
+
+.music-director-text{
+    width: 480px;
+    margin-right: 100px;
+    
+    order: 1;
+}
+
+.music-director-text h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* musicians 音樂家頁面 */
+.musicians{
+    max-width: 1520px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.musicians-img{
+
+    margin-bottom: 90px;
+}
+
+.musicians-img img{
+    display: block;
+    max-width: 100%;
+}
+
+.musicians h4{
+    padding-top: 40px;
+    
+    text-decoration: #050505;
+    text-decoration-color: #050505 ;
+}
+
+.musicians h4 a{
+    font-family: 'Lato-Bold';
+    color: #050505;
+}

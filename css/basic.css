@@ -124,6 +124,12 @@ nav{
     border-bottom: 1px solid #f6f6f6;
 }
 
+
+/* 漢堡 */
+.fa-bars{
+    color: white;
+}
+
    
 /* 子選單預設隱藏 */
 .menu-list > li > ol {

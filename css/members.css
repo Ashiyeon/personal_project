@@ -1,0 +1,72 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("basic.css");
+
+
+
+/* 成員頁面 members */
+
+.members{
+    box-sizing: border-box;
+    padding-top: 105px;
+    /* width: 1530px; */
+    margin: 0 auto;
+}
+
+.members h2{
+    padding-top: 40px;
+}
+
+.members ul{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-top: 55px;
+    padding-bottom: 20px;
+
+    justify-content: space-between;
+}
+
+.members li{
+    font-size: 2.4rem;
+    font-family: 'RobotoSlab-Medium';
+}
+
+.members i{
+    margin-right: 10px;
+}
+
+.members-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.members-wrapper h2{
+    padding-top: 150px;
+}
+
+.artist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.artist li{
+    padding-top: 60px;
+    padding-left: 10px;
+}
+
+.artist img{
+    transition: all 0.4s;
+    
+}
+
+.artist img:hover{
+    transform: scale(0.8);
+}
+
+.artist h4{
+    padding-top: 10px;
+    
+}
