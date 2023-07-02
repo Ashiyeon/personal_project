@@ -33,7 +33,7 @@ const dragStart = (e) => {
 
 const dragging = (e) =>{
     if(!isDragStart) return;
-    e.preventDefault(); //關閉預設
+    e.preventDefault();
     carousel.classList.add("dragging");
     positionDiff = e.pageX -prevPageX
     carousel.scrollLeft = prevScrollLeft - positionDiff;

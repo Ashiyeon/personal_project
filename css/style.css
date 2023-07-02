@@ -225,6 +225,10 @@
     scroll-behavior: auto;
 }
 
+.carousel.dragging img{
+    pointer-events: none;
+}
+
 .news-slider{
     margin-left: 15px;
     cursor: pointer;
