@@ -5,7 +5,7 @@ const targetElement = document.querySelector('.top-event');
 // 事件監聽函數
 const onScroll = function(e) {
     // 增加滾動距離
-    scrollDistance += Math.abs(e.deltaY);
+    scrollDistance += e.deltaY;
     e.preventDefault();
     // 如果滾動距離超過目標距離
     if(scrollDistance >= targetScroll) {
@@ -26,7 +26,7 @@ const onScroll = function(e) {
     }
 };
 
-window.addEventListener('wheel', onScroll);
+window.addEventListener('wheel', onScroll, { passive: false });
 
 
 
