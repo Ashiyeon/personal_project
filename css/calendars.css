@@ -27,6 +27,7 @@
     width: 220px;
     height: 55px;
 
+    cursor: pointer;
     margin-top: 100px;
     font-family: 'Lato-Regular';
     letter-spacing: 0.8px;
@@ -151,6 +152,7 @@
     display: flex;
     margin-top: 50px;
     justify-content: center;
+    cursor: pointer;
 }
 
 .calendar-page h4{
