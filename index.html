@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Peanut Philharmonic</title>
 </head>
 <body>
@@ -43,8 +44,12 @@
         <div class="wrapper">
             <div class="top-event">
                 <div class="top-image">
-                    <img src="./image/top-image-1.png" alt="">
-                    <img src="./image/top-image-2.png" alt="">
+                    <img data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" src="./image/top-image-1.png" alt="">
+                    <img data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine" src="./image/top-image-2.png" alt="">
                 </div>
                 <div class="top-text">
                     <div class="h3-div">
@@ -202,5 +207,12 @@
         </div>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 50,
+            duration: 1000
+            });
+    </script>
 </body>
 </html>

@@ -1,3 +1,39 @@
+let scrollDistance = 0;
+const targetScroll = 200;
+const targetElement = document.querySelector('.top-event');
+
+// 事件監聽函數
+const onScroll = function(e) {
+    // 增加滾動距離
+    scrollDistance += Math.abs(e.deltaY);
+    e.preventDefault();
+    // 如果滾動距離超過目標距離
+    if(scrollDistance >= targetScroll) {
+        // 阻止默認的滾動行為
+        e.preventDefault();
+
+        // 滾動到目標元素
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+
+        // 重置滾動距離
+        scrollDistance = 0;
+
+        // 移除滾動事件監聽器
+        window.removeEventListener('wheel', onScroll);
+    }
+};
+
+window.addEventListener('wheel', onScroll);
+
+
+
+
+
+
+
 //新聞輪播
 
 const carousel = document.querySelector(".carousel");
