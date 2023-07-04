@@ -13,6 +13,8 @@
 // ░░░░░░░░▌▒▒▒▒▄▄▒▒▒▐░░░G
 
 
+//滿版圖鎖屏
+
 let scrollDistance = 0;
 const targetScroll = 400;
 const targetElement = document.querySelector('.top-event');
@@ -90,7 +92,7 @@ const dragStart = (e) => {
 
 const dragging = (e) =>{
     if(!isDragStart) return;
-    e.preventDefault(); //關閉預設
+    e.preventDefault();
     carousel.classList.add("dragging");
     positionDiff = e.pageX -prevPageX
     carousel.scrollLeft = prevScrollLeft - positionDiff;
