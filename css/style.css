@@ -198,15 +198,15 @@
 .news-h1{
     margin-left: 8%;
     margin-top: 10%;
+    margin-bottom: 5%;
 }
-
+/*
 .news{ 
     display: flex;
 
     max-width: 1320px;
     align-items: center;
     justify-content: center;
-    /* min-height: 100vh; */
     padding-top: 100px;
     position:  relative;
     margin: 0 auto;
@@ -222,7 +222,6 @@
     background-color: #333;
     color: white;
     border-radius: 50%;
-    /* transform: translateY(-50%); */
     
     position: absolute;
 }
@@ -237,7 +236,6 @@
 
 .carousel{
     display: flex;
-    /* width: 100%; */
     overflow: hidden;
     scroll-behavior: smooth;
     
@@ -261,7 +259,6 @@
 }
 
 .news-slider a img{
-    /* width: 100%;  */
 }
 
 .news-slider a{
@@ -284,7 +281,7 @@
     color: #050505;
 
     font-family: "RobotoSlab-Bold";
-}
+} */
 
 
 
@@ -387,28 +384,41 @@
 
 
 .swiper {
-    width: 100%;
+    max-width: 1350px;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* object-fit: cover; */
-  }
-
-  .swiper {
     width: 100%;
-    height: auto;
-    margin: 20px auto;
-  }
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide h4{
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #999191;
+}
+
+.swiper-slide h4:last-child{
+    margin: 15px 0 15px 0;
+    padding-left: 15px;
+    color: #050505;
+
+    font-family: "RobotoSlab-Bold";
+}
+
+.swiper-slide a{
+    text-decoration: none;
+    text-align: left;
+}
