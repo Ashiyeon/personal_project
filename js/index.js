@@ -59,52 +59,111 @@ window.addEventListener('scroll', checkScrollPosition);
 
 //新聞輪播
 
-const carousel = document.querySelector(".carousel");
-firstImg = document.querySelectorAll(".news-slider")[0];
-arrowIcons = document.querySelectorAll(".news i");
+// const carousel = document.querySelector(".carousel");
+// firstImg = document.querySelectorAll(".news-slider")[0];
+// arrowIcons = document.querySelectorAll(".news i");
 
-let isDragStart = false, prevPageX, prevScrollLeft, positionDiff;
-let firstImgWidth = firstImg.clientWidth + 16;
+// let isDragStart = false, prevPageX, prevScrollLeft, positionDiff;
+// let firstImgWidth = firstImg.clientWidth + 16;
 
-arrowIcons.forEach(icon =>{
-    icon.addEventListener("click", () =>{
-        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+// arrowIcons.forEach(icon =>{
+//     icon.addEventListener("click", () =>{
+//         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+//     });
+// });
+
+// const autoSlide = () => {
+//     positionDiff = Math.abs(positionDiff);
+//     let firstImgWidth = firstImg.clientWidth + 16;
+//     let valDifference = firstImgWidth - positionDiff;
+
+//     if(carousel.scrollLeft > prevScrollLeft){
+//         return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+//     }
+//     carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+// }
+
+// const dragStart = (e) => {
+//     //按下事件
+//     isDragStart = true;
+//     prevPageX = e.pageX;
+//     prevScrollLeft = carousel.scrollLeft; 
+// }
+
+// const dragging = (e) =>{
+//     if(!isDragStart) return;
+//     e.preventDefault();
+//     carousel.classList.add("dragging");
+//     positionDiff = e.pageX -prevPageX
+//     carousel.scrollLeft = prevScrollLeft - positionDiff;
+// }
+
+// const dragStop = () => {
+//     isDragStart = false;
+//     carousel.classList.remove("dragging");
+//     autoSlide();
+// }
+
+
+// carousel.addEventListener("mousedown", dragStart);
+// carousel.addEventListener("mouseup", dragStop);
+// carousel.addEventListener("mousemove", dragging);
+
+
+
+
+
+
+
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  var appendNumber = 4;
+  var prependNumber = 1;
+  document
+    .querySelector(".prepend-2-slides")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.prependSlide([
+        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+      ]);
     });
-});
-
-const autoSlide = () => {
-    positionDiff = Math.abs(positionDiff);
-    let firstImgWidth = firstImg.clientWidth + 16;
-    let valDifference = firstImgWidth - positionDiff;
-
-    if(carousel.scrollLeft > prevScrollLeft){
-        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-    }
-    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-}
-
-const dragStart = (e) => {
-    //按下事件
-    isDragStart = true;
-    prevPageX = e.pageX;
-    prevScrollLeft = carousel.scrollLeft; 
-}
-
-const dragging = (e) =>{
-    if(!isDragStart) return;
-    e.preventDefault();
-    carousel.classList.add("dragging");
-    positionDiff = e.pageX -prevPageX
-    carousel.scrollLeft = prevScrollLeft - positionDiff;
-}
-
-const dragStop = () => {
-    isDragStart = false;
-    carousel.classList.remove("dragging");
-    autoSlide();
-}
-
-
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mouseup", dragStop);
-carousel.addEventListener("mousemove", dragging);
+  document
+    .querySelector(".prepend-slide")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.prependSlide(
+        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+      );
+    });
+  document
+    .querySelector(".append-slide")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.appendSlide(
+        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+      );
+    });
+  document
+    .querySelector(".append-2-slides")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.appendSlide([
+        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+      ]);
+    });
