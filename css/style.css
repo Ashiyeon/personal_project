@@ -41,17 +41,13 @@
     width: 60%;
     margin-left: 150px;
     position: relative;
-    overflow: hidden;
+    
 }
 
 .top-image img:first-child{
     position: absolute;
     transition: transform 0.3s ease;
 }
-
-/* .top-image img:first-child:hover{
-    transform: scale(1.2);  
-} */
 
 .top-image img:last-child{
     position: absolute;
@@ -60,18 +56,11 @@
     transition: transform 0.3s ease; 
 }
 
-/* .top-image img:last-child:hover{
-    transform: scale(1.2);
-} */
 
 .top-image img{
-    /* margin-bottom: 215px; */
     margin-left: 0;
     display:block;
-
     max-width: 100%;
-
-    /* border: 1px solid green; */
 }
 
 .top-text{
@@ -138,34 +127,51 @@
 
 .bot-image{
     width: 60%;
-    padding-right: 20px;
-    padding-left: 310px;
-    order: 2;
+    margin-right: 150px;
     position: relative;
-    transition: transform 0.3s ease;
+
+    order: 2;
 }
 
 .bot-image img:first-child{
-    margin-right: 0;
-    display: block;
-    max-width: 100%;
     position: absolute;
-    /* border: 1px solid green; */
+    transition: transform 0.3s ease;
+    top: 0;
+    right: 0;
 }
 
 .bot-image img:last-child{
     position: absolute;
-    bottom: -90px;
-    left: 200px;
+    bottom: -60px;
+    left: 10px;
+    /* transition: transform 0.3s ease;  */
+}
+
+
+.bot-image img{
+    margin-left: 0;
+    display:block;
+    max-width: 100%;
+
+    
 }
 
 .bot-text{
+    /* margin-left: 420px; */
+    /* height: 605px; */
     padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 215px;
-    padding-left: 150px;
     width: 40%;
-    
+
     order: 1;
+}
+
+.h3-div{
+
+    border-top: 1px solid black;
+    padding-top: 50px;
 }
 
 .bot-text h3{
@@ -174,16 +180,17 @@
 
 .bot-text h2{
     margin-top: 45px;
-    width: 600px
 }
 
 .bot-text p{
     margin-top: 90px;
     width: 405px;
-    margin-bottom: 15px;
-    line-height: 3.6rem;
 }
 
+.btn-div{
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
 
 
 /* 最新新聞 */
