@@ -5,13 +5,20 @@
 
 
 /* 成員頁面 members */
+.orchestra{
+    padding-top: 105px;
+    max-width: 1530px;
+    margin: 0 auto;
+}
 
 .members{
     box-sizing: border-box;
-    padding-top: 105px;
-    /* width: 1530px; */
+    display: block;
+    max-width: 1530px;
     margin: 0 auto;
+    border: 1px solid red;
 }
+
 
 .members h2{
     padding-top: 40px;
