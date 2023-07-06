@@ -67,65 +67,6 @@ p{
     position: relative;
 }
 
-/* header */
-/* header{
-    position: fixed;
-    width: 100%;
-    max-width: 1920px;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 2rem;
-    z-index: 999;
-
-    font-family: 'klavika-medium';
-} */
-
-/* 導覽列 */
-/* nav{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 105px;
-    background-color: #050505;;
-}
-
-.logo{
-    margin-left: 150px;
-}
-
-.menu-list{
-    display: flex;
-    margin-right: 100px;
-    font-family: 'klavika-medium';
-}
-
-.menu-list > li{    
-    margin-right: 20px;
-    position: relative;
-    margin-right: 44px;
-    margin-bottom: 1px;
-}
-
-.menu-list > li  a{
-    color: #f6f6f6;
-    text-decoration: none;
-}
-
-.menu-list > li:last-child{
-    margin-right: 0;
-}
-
-.menu-list > li:hover{
-    border-bottom: 1px solid #f6f6f6;
-} */
-
-
-/* 漢堡 */
-/* .fa-bars{
-    color: white;
-} */
-
 
 /* footer */
 .black-footer{
@@ -278,6 +219,7 @@ p{
     margin-left: auto;
     font-size: 2rem;
     z-index: 999;
+    top: 0;
 
     font-family: 'klavika-medium';
 }
@@ -369,7 +311,7 @@ p{
     background-color: transparent;
     cursor: pointer;
     height: 39px;
-    margin-right: 50px;
+    margin-right: 10px;
     display: none;
   }
   .nav-toggler span, 
